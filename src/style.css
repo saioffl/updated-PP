@@ -1,0 +1,169 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.nav-glow {
+    position: relative;
+    padding: 4px 8px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.nav-glow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+    background-size: 300% 300%;
+    filter: blur(25px);
+    border-radius: 50%;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+    animation: rotate-96 5s linear infinite;
+}
+
+.nav-glow:hover::after {
+    opacity: 1;
+}
+
+@keyframes rotate-96 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .glass {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+}
+
+.container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container .glass svg {
+    font-size: 2.5em;
+    fill: #fff;
+}
+
+
+.homePage {
+    background-image: url(../assets/bgcentered.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.aboutTown {
+    background-image: url(../assets/aboutbg.svg);
+    font-family: "Covered By Your Grace", cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skillTown {
+    background-image: url(../assets/aboutbg.svg);
+    font-family: "Covered By Your Grace", cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel {
+    margin: 42px auto;
+    width: 55%;
+
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-track {
+    display: flex;
+    animation: spin 20s linear infinite;
+    gap: 1em;
+    width: fit-content;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    flex-shrink: 0;
+}
+
+.card {
+    flex: 0 0 3em;
+    height: 3em;
+    padding: 1em;
+    font-size: 2rem;
+    border-radius: .2em;
+    /* border: 2px solid green; */
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-20% - 0.8em));
+    }
+}
+
+.bgMain{
+    font-family: "Covered By Your Grace", cursive;
+}
