@@ -91,7 +91,7 @@
             <!-- Hamburger (only mobile) outside the glassNav -->
             <ul class="flex md:hidden items-center">
                 <li class="cursor-pointer" onclick="showSidebar()">
-                    <!-- <img src="./images/icons8-menu-48.png" alt="menu" class="w-8 h-8"> -->
+                    <img src="./images/icons8-menu-48.png" alt="menu" class="w-8 h-8">
                 </li>
             </ul>
 
@@ -126,36 +126,40 @@
                     <div class="flex gap-4 sm:gap-6">
 
                         <!-- Resume Button -->
-                        <button class="h-10 sm:h-11 md:h-12 
-                    w-36 sm:w-40 md:w-44 
-                    text-sm sm:text-base
-                    text-white rounded-full bg-[#2a2a2a]
-                    border border-[#3b3b3b]
-                    shadow-[0_0_8px_rgba(0,0,0,0.6),-1px_-5px_15px_#41465b,5px_5px_15px_#41465b,
-                    inset_5px_5px_10px_#212121,inset_-5px_-5px_10px_#212121]
-                    transition-all duration-500 
-                    hover:shadow-[0_0_12px_rgba(0,0,0,0.8),1px_1px_13px_#20232e,-1px_-1px_13px_#545b78]
-                    hover:text-blue-300
-                    active:shadow-[0_0_14px_rgba(0,0,0,1),1px_1px_13px_#20232e,-1px_-1px_33px_#545b78]
-                    active:text-gray-300">
-                            Resume
-                        </button>
+                        <a href="./assets/@saioffl RESUME.pdf" download>
+                            <button class="h-10 sm:h-11 md:h-12 
+                            w-36 sm:w-40 md:w-44 
+                            text-sm sm:text-base
+                            text-white rounded-full bg-[#2a2a2a]
+                            border border-[#3b3b3b]
+                            shadow-[0_0_8px_rgba(0,0,0,0.6),-1px_-5px_15px_#41465b,5px_5px_15px_#41465b,
+                            inset_5px_5px_10px_#212121,inset_-5px_-5px_10px_#212121]
+                            transition-all duration-500 
+                            hover:shadow-[0_0_12px_rgba(0,0,0,0.8),1px_1px_13px_#20232e,-1px_-1px_13px_#545b78]
+                            hover:text-blue-300
+                            active:shadow-[0_0_14px_rgba(0,0,0,1),1px_1px_13px_#20232e,-1px_-1px_33px_#545b78]
+                            active:text-gray-300">
+                                Resume
+                            </button>
+                        </a>
 
                         <!-- Contact Button -->
-                        <button class="h-10 sm:h-11 md:h-12 
-                    w-36 sm:w-40 md:w-44 
-                    text-sm sm:text-base
-                    text-white rounded-full bg-[#2a2a2a]
-                    border border-[#3b3b3b]
-                    shadow-[0_0_8px_rgba(0,0,0,0.6),-1px_-5px_15px_#41465b,5px_5px_15px_#41465b,
-                    inset_5px_5px_10px_#212121,inset_-5px_-5px_10px_#212121]
-                    transition-all duration-500 
-                    hover:shadow-[0_0_12px_rgba(0,0,0,0.8),1px_1px_13px_#20232e,-1px_-1px_13px_#545b78]
-                    hover:text-blue-300
-                    active:shadow-[0_0_14px_rgba(0,0,0,1),1px_1px_13px_#20232e,-1px_-1px_33px_#545b78]
-                    active:text-gray-300">
-                            Contact Me
-                        </button>
+                        <a href="#contact">
+                            <button class="h-10 sm:h-11 md:h-12 
+                        w-36 sm:w-40 md:w-44 
+                        text-sm sm:text-base
+                        text-white rounded-full bg-[#2a2a2a]
+                        border border-[#3b3b3b]
+                        shadow-[0_0_8px_rgba(0,0,0,0.6),-1px_-5px-15px_#41465b,5px_5px_15px_#41465b,
+                        inset_5px_5px_10px_#212121,inset_-5px_-5px_10px_#212121]
+                        transition-all duration-500 
+                        hover:shadow-[0_0_12px_rgba(0,0,0,0.8),1px_1px_13px_#20232e,-1px_-1px_13px_#545b78]
+                        hover:text-blue-300
+                        active:shadow-[0_0_14px_rgba(0,0,0,1),1px_1px_13px_#20232e,-1px_-1px_33px_#545b78]
+                        active:text-gray-300">
+                                Contact Me
+                            </button>
+                        </a>
 
                     </div>
                 </div>
@@ -490,7 +494,7 @@
                 <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
                     <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
-                            <label  for="first-name" class="block text-sm/6 font-semibold text-white">First name</label>
+                            <label for="first-name" class="block text-sm/6 font-semibold text-white">First name</label>
                             <div class="mt-2.5">
                                 <input required id="first-name" type="text" name="first-name" autocomplete="given-name"
                                     class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
@@ -499,7 +503,7 @@
                         <div>
                             <label for="last-name" class="block text-sm/6 font-semibold text-white">Last name</label>
                             <div class="mt-2.5">
-                                <input  id="last-name" type="text" name="last-name" autocomplete="family-name"
+                                <input id="last-name" type="text" name="last-name" autocomplete="family-name"
                                     class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
                             </div>
                         </div>
@@ -537,17 +541,18 @@
                                                 clip-rule="evenodd" fill-rule="evenodd" />
                                         </svg>
                                     </div>
-                                    <input required id="phone-number" type="text" name="phone-number" placeholder="+91-9876XXXXX"
+                                    <input required id="phone-number" type="text" name="phone-number"
+                                        placeholder="+91-9876XXXXX"
                                         class="block min-w-0 grow bg-transparent py-1.5 pr-3 pl-1 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-sm/6" />
                                 </div>
                             </div>
                         </div>
                         <div class="sm:col-span-2">
                             <label" for="message" class="block text-sm/6 font-semibold text-white">Message</label>
-                            <div class="mt-2.5">
-                                <textarea required id="message" name="message" rows="4 "
-                                    class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"></textarea>
-                            </div>
+                                <div class="mt-2.5">
+                                    <textarea required id="message" name="message" rows="4 "
+                                        class="block w-full rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"></textarea>
+                                </div>
                         </div>
                         <div class="flex items-center gap-4 sm:col-span-2">
 
