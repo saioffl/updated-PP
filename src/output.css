@@ -1412,6 +1412,18 @@
       color: var(--color-gray-500);
     }
   }
+  .required\:block {
+    &:required {
+      display: block;
+    }
+  }
+  .required\:\*\:block {
+    &:required {
+      :is(& > *) {
+        display: block;
+      }
+    }
+  }
   .focus-within\:relative {
     &:focus-within {
       position: relative;
