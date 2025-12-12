@@ -200,6 +200,10 @@ html {
     /* prevents cards from stretching too wide */
 }
 
+
+.aboutBg{
+    background-image: url();
+}
 .plugin-card.futuristic {
     --glow-gradient: linear-gradient(90deg, #00dc82, #0ff, #ff00ff);
     --bg-dark: rgba(14, 17, 27, 0.8);
